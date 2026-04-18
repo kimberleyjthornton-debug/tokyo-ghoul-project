@@ -109,9 +109,18 @@ img:hover {
     background-position: center top;
   }
   .image-slider-container {
-    height: 150px;
-    gap: 1px;
-    margin: 1px auto;
+    height: 200px; /* Slightly shorter for mobile screens */
+    gap: 2px; /* Tighter gaps for a "seamed" look */
+    overflow-x: auto; /* Allows users to swipe if it gets too wide */
+    margin-top: 2px;
+  }
+  img {
+    min-width: 40px; /* Prevents them from becoming invisible lines */
+    transition: flex 0.4s ease;
+  }
+  img:active,
+  img:hover {
+    flex: 10; /* A massive expansion when tapped/held */
   }
   .Layout-Wrapper {
     flex-direction: column; /* Stacks sidebar on top of content */
