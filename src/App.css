@@ -1,4 +1,4 @@
-/* 1. Reset and Global Styles */
+/* Reset and Global Styles */
 * {
   margin: 0;
   padding: 0;
@@ -17,8 +17,7 @@ header {
   border: 2px solid #a9a9a9a2;
   border-radius: 4px;
   background-size: cover;
-  background-position: center top; /* Keeps their heads in view */
-  min-height: 60vh; /* Relative height is better for responsiveness */
+  min-height: 60vh; /* Relative height for responsiveness */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -32,6 +31,53 @@ h1 {
   color: #a9a9a9a2;
   text-align: center;
   font-size: clamp(3rem, 10vw, 600px); /* Automatically shrinks on mobile */
+}
+
+.Layout-Wrapper {
+  display: flex;
+  width: 100vw; /* Take up 100% of the viewport width */
+  min-height: 100vh; /* 2. Full Height: Makes sure the sidebar goes to the floor */
+  width: 100%; /* 3. Full Width: Makes sure it fills the screen */
+}
+
+.Sidebar-Nav {
+  flex: 0 0 200px; /* Do not grow, do not shrink, stay 200px */
+  max-width: 200px;
+  min-width: 150px;
+  background: #111;
+  border-right: 1px solid #333;
+  padding: 10px;
+  overflow-y: auto; /* In case you add 100 characters, it won't break! */
+  padding: 5px;
+  border-right: 1px solid #333;
+}
+
+.Sidebar-Nav ul li {
+  list-style: none;
+  white-space: nowrap; /* Keeps names on one line */
+  overflow: hidden; /* Hides the overlap */
+  text-overflow: ellipsis; /* Adds "..." if the name is too long */
+  margin-top: 10px;
+  color: #a9a9a9a2;
+  font-size: 18px;
+  font-family: "Bangers", cursive; /* Match your vibe! */
+}
+
+.nav-link {
+  text-decoration: none; /* Removes the underline */
+  color: #a9a9a9a2; /* Keeps that ghostly grey color */
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: white; /* Glows white when you hover over a name */
+}
+
+.main-content {
+  flex-grow: 1; /* Pushes content to fill the rest of the screen */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers the header and slider horizontally */
 }
 
 .image-slider-container {
@@ -67,5 +113,40 @@ img:hover {
     height: 150px;
     gap: 1px;
     margin: 1px auto;
+  }
+  .Layout-Wrapper {
+    flex-direction: column; /* Stacks sidebar on top of content */
+  }
+  .Sidebar-Nav {
+    width: 100%; /* Sidebar takes full width on mobile */
+    min-width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #333;
+    display: flex; /* Make links sit side-by-side on mobile */
+    flex: 0 0 auto; /* Stop it from trying to fill the whole height */
+    align-items: center;
+    overflow-x: auto; /* Let them scroll horizontally */
+    gap: 15px;
+    width: 100%;
+    min-width: 100%;
+    min-height: auto; /* IMPORTANT: removes the 100vh on mobile */
+    height: 60px; /* Give it a fixed small height for the links */
+    padding: 0 10px;
+    white-space: nowrap;
+    z-index: 10; /* Keeps it on top */
+  }
+  .Sidebar-Nav ul {
+    display: flex; /* Make the list horizontal */
+    flex-direction: row;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+  }
+  .Sidebar-Nav ul li {
+    margin-top: 0; /* Remove that top margin from your desktop styles */
+    font-size: 14px; /* Slightly smaller for mobile screens */
+  }
+  .main-content {
+    width: 100%; /* Ensure the content fills the screen width now */
   }
 }
