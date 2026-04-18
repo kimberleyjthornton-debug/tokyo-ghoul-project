@@ -1,0 +1,71 @@
+/* 1. Reset and Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+header {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
+    url("/images/kaneki-vs-ghoul-trim.webp");
+  background-repeat: no-repeat;
+  border: 2px solid #a9a9a9a2;
+  border-radius: 4px;
+  background-size: cover;
+  background-position: center top; /* Keeps their heads in view */
+  min-height: 60vh; /* Relative height is better for responsiveness */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+h1 {
+  font-family: "Bangers", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  color: #a9a9a9a2;
+  text-align: center;
+  font-size: clamp(3rem, 10vw, 600px); /* Automatically shrinks on mobile */
+}
+
+.image-slider-container {
+  margin: 4px auto; /* Centered with space above/below */
+  width: 100%; /* Wider looks better for sliders */
+  height: 450px;
+  display: flex;
+  gap: 5px;
+}
+
+img {
+  width: 0px; /* Start small */
+  flex-grow: 1; /* Each image takes an equal share of the space */
+  height: 80%; /* Use the full height of your container */
+  object-fit: cover;
+  border: 2px solid #a9a9a9a2;
+  border-radius: 4px;
+  transition: all ease-in-out 0.5s;
+  cursor: pointer;
+}
+
+img:hover {
+  flex-grow: 2; /* This pushes the others aside when you hover */
+}
+
+/* 5. Mobile Adjustments */
+@media (max-width: 768px) {
+  header {
+    min-height: 20vh; /* Shorter on mobile so it doesn't zoom too much */
+    background-position: center top;
+  }
+  .image-slider-container {
+    height: 150px;
+    gap: 1px;
+    margin: 1px auto;
+  }
+}
