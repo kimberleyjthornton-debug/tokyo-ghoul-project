@@ -14,6 +14,11 @@ function App() {
               </a>
             </li>
             <li>
+              <a href="/kamishiro" className="nav-link">
+                Rize Kamishiro
+              </a>
+            </li>
+            <li>
               <a href="/nagachika" className="nav-link">
                 Hideyoshi Nagachika
               </a>
@@ -24,6 +29,11 @@ function App() {
               </a>
             </li>
             <li>
+              <a href="/amon" className="nav-link">
+                Kotaro Amon
+              </a>
+            </li>
+            <li>
               <a href="/suzuya" className="nav-link">
                 Suzuya Juuzou
               </a>
@@ -31,6 +41,11 @@ function App() {
             <li>
               <a href="/yoshimura" className="nav-link">
                 Eto Yoshimura
+              </a>
+            </li>
+            <li>
+              <a href="/yoshimura" className="nav-link">
+                Takizawa Seidou
               </a>
             </li>
             <li>
@@ -50,13 +65,16 @@ function App() {
             <h1>Tokyo Ghoul</h1>
           </header>
           <div className="image-slider-container">
-            <img src="/images/arima.webp" />
-            <img src="/images/eto.webp" />
+            <img src="/images/rize-kamishiro.webp" />
             <img src="/images/hide.webp" />
-            <img src="/images/kaneki-ken.webp" href="/kaneki" />
-            <img src="/images/juuzou-suzuya.webp" />
-            <img src="/images/tsukiyama.webp" />
             <img src="/images/touka.webp" />
+            <img src="/images/tsukiyama.webp" />
+            <img src="/images/kaneki-ken.webp" href="/kaneki" />
+            <img src="/images/eto.webp" />
+            <img src="/images/juuzou-suzuya.webp" />
+            <img src="/images/amon.webp" />
+            <img src="/images/takizawa.webp" />
+            <img src="/images/arima.webp" />
           </div>
         </div>
       </div>

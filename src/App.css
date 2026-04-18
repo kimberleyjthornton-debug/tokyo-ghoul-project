@@ -46,9 +46,8 @@ h1 {
   min-width: 150px;
   background: #111;
   border-right: 1px solid #333;
-  padding: 10px;
   overflow-y: auto; /* In case you add 100 characters, it won't break! */
-  padding: 5px;
+  padding-top: 10px;
   border-right: 1px solid #333;
 }
 
