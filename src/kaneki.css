@@ -1,6 +1,6 @@
 /* Ensure the background stretches full width and height of the header */
 .kaneki-hero {
-  width: 100%;
+  width: 100% auto;
   height: 50vh;
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
