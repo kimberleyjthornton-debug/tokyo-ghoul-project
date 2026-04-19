@@ -1,25 +1,25 @@
 import React from "react";
+import "./kaneki.css";
 
 const KanekiPage = () => {
   return (
-    <div>
-      {/* You can import your sidebar here later! */}
-
-      <main className="main-content">
-        <header className="character-header">
-          <h1>Ken Kaneki</h1>
+    <div className="kaneki-container">
+      <header className="kaneki-hero">
+        <div className="hero-text-wrapper">
+          <h1>KANEKI KEN</h1>
           <p className="alias">"The One-Eyed King"</p>
-        </header>
-
-        <section className="jungian-analysis">
-          <h2>Psychological Profile</h2>
+        </div>
+      </header>
+      <main className="kaneki-content">
+        <section className="tragedy-quote">
           <p>
-            {/* Your Jungian integration text goes here */}
-            Kaneki represents the struggle of the Shadow...
+            "I’m not the protagonist of a novel or anything. I’m just a college
+            student who likes to read, like you could find anywhere. But... if,
+            for sake of argument, you were to write a story with me in the lead
+            role, it would certainly be... a tragedy..."
           </p>
         </section>
-
-        <section></section>
+        {/* ... rest of your content ... */}
       </main>
     </div>
   );

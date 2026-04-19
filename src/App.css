@@ -29,14 +29,38 @@ h1 {
   font-weight: 400;
   font-style: normal;
   color: #a9a9a9a2;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
   text-align: center;
   font-size: clamp(3rem, 10vw, 600px); /* Automatically shrinks on mobile */
+  transition: ease-in-out 0.3s;
 }
 
-.Layout-Wrapper {
-  display: flex;
-  min-height: 100vh; /* 2. Full Height: Makes sure the sidebar goes to the floor */
-  width: 100%; /* 3. Full Width: Makes sure it fills the screen */
+h1:hover {
+  color: #ffffff8c; /* Brighter than the surrounding grey text */
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.8); /* A subtle ghostly glow */
+}
+
+p {
+  font-family: "Shadows Into Light", cursive;
+  color: #a9a9a9a2;
+  font-size: 22px;
+  font-weight: 400;
+  font-style: normal;
+  margin: 10px 5px;
+  text-align: center;
+}
+
+.highlight {
+  color: #ffffffc9; /* Brighter than the surrounding grey text */
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.727); /* A subtle ghostly glow */
+  font-weight: 500; /* Just a tiny bit firmer than normal, but not "Bold" */
+  letter-spacing: 1px;
+}
+
+.text-highlight {
+  color: #ffffffc9; /* Same white as your 'Tokyo Ghoul' text */
+  font-weight: 500; /* Medium weight, not full bold */
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.727); /* Subtle 'monstrous' glow */
 }
 
 .Sidebar-Nav {
@@ -54,16 +78,25 @@ h1 {
   list-style: none;
   white-space: nowrap; /* Keeps names on one line */
   overflow: hidden; /* Hides the overlap */
-  margin-top: 10px;
+  margin-top: 2px;
   color: #a9a9a9a2;
   font-size: 18px;
+  font-weight: lighter;
   font-family: "Bangers", cursive;
+  border-bottom: 2px solid #33333358;
 }
 
 .nav-link {
   text-decoration: none;
   color: #a9a9a9a2;
   transition: color 0.3s;
+  padding-top: 5px;
+}
+
+.nav-link.active {
+  color: red;
+  border-left: 3px solid red;
+  padding-left: 8px;
 }
 
 .nav-link:hover {
@@ -77,12 +110,35 @@ h1 {
   align-items: center; /* Centers the header and slider horizontally */
 }
 
+.Layout-Wrapper {
+  display: flex;
+  min-height: 100vh; /* 2. Full Height: Makes sure the sidebar goes to the floor */
+  width: 100%; /* 3. Full Width: Makes sure it fills the screen */
+}
+
 .image-slider-container {
   margin: 4px auto; /* Centered with space above/below */
   width: 100%;
   height: 450px;
   display: flex;
   gap: 5px;
+}
+
+.image-slider-container a {
+  width: 0px;
+  flex-grow: 1;
+  height: 85%;
+  transition: all ease-in-out 0.5s;
+  display: block; /* Ensures the link takes up the flex space */
+}
+
+.image-slider-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 2px solid #a9a9a9a2;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 img {
@@ -96,8 +152,12 @@ img {
   cursor: pointer;
 }
 
-img:hover {
-  flex-grow: 2; /* This pushes the others aside when you hover */
+.image-slider-container a:hover {
+  flex-grow: 2;
+}
+
+.image-slider-container a:hover img {
+  filter: brightness(1.1);
 }
 
 /* 5. Mobile Adjustments */
@@ -152,5 +212,9 @@ img:hover {
   }
   .main-content {
     width: 100%; /* Ensure the content fills the screen width*/
+  }
+  p {
+    font-size: 13px;
+    margin: 2px;
   }
 }
