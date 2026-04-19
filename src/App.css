@@ -17,7 +17,7 @@ header {
   border: 2px solid #a9a9a9a2;
   border-radius: 4px;
   background-size: cover;
-  min-height: 60vh; /* Relative height for responsiveness */
+  min-height: 55vh; /* Relative height for responsiveness */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -35,7 +35,6 @@ h1 {
 
 .Layout-Wrapper {
   display: flex;
-  width: 100vw; /* Take up 100% of the viewport width */
   min-height: 100vh; /* 2. Full Height: Makes sure the sidebar goes to the floor */
   width: 100%; /* 3. Full Width: Makes sure it fills the screen */
 }
@@ -46,7 +45,7 @@ h1 {
   min-width: 150px;
   background: #111;
   border-right: 1px solid #333;
-  overflow-y: auto; /* In case you add 100 characters, it won't break! */
+  overflow-y: auto; /* Prevents it from breaking irrespective to number of characters added */
   padding-top: 10px;
   border-right: 1px solid #333;
 }
@@ -55,21 +54,20 @@ h1 {
   list-style: none;
   white-space: nowrap; /* Keeps names on one line */
   overflow: hidden; /* Hides the overlap */
-  text-overflow: ellipsis; /* Adds "..." if the name is too long */
   margin-top: 10px;
   color: #a9a9a9a2;
   font-size: 18px;
-  font-family: "Bangers", cursive; /* Match your vibe! */
+  font-family: "Bangers", cursive;
 }
 
 .nav-link {
-  text-decoration: none; /* Removes the underline */
-  color: #a9a9a9a2; /* Keeps that ghostly grey color */
+  text-decoration: none;
+  color: #a9a9a9a2;
   transition: color 0.3s;
 }
 
 .nav-link:hover {
-  color: white; /* Glows white when you hover over a name */
+  color: white;
 }
 
 .main-content {
@@ -81,7 +79,7 @@ h1 {
 
 .image-slider-container {
   margin: 4px auto; /* Centered with space above/below */
-  width: 100%; /* Wider looks better for sliders */
+  width: 100%;
   height: 450px;
   display: flex;
   gap: 5px;
@@ -90,7 +88,7 @@ h1 {
 img {
   width: 0px; /* Start small */
   flex-grow: 1; /* Each image takes an equal share of the space */
-  height: 80%; /* Use the full height of your container */
+  height: 85%; /* Use the full height of your container */
   object-fit: cover;
   border: 2px solid #a9a9a9a2;
   border-radius: 4px;
@@ -120,14 +118,16 @@ img:hover {
   }
   img:active,
   img:hover {
-    flex: 10; /* A massive expansion when tapped/held */
+    flex: 30; /* A massive expansion when tapped/held */
   }
   .Layout-Wrapper {
     flex-direction: column; /* Stacks sidebar on top of content */
   }
   .Sidebar-Nav {
     width: 100%; /* Sidebar takes full width on mobile */
+    height: 60px; /* Give it a fixed small height for the links */
     min-width: 100%;
+    min-height: auto; /* IMPORTANT: removes the 100vh on mobile */
     border-right: none;
     border-bottom: 1px solid #333;
     display: flex; /* Make links sit side-by-side on mobile */
@@ -135,10 +135,6 @@ img:hover {
     align-items: center;
     overflow-x: auto; /* Let them scroll horizontally */
     gap: 15px;
-    width: 100%;
-    min-width: 100%;
-    min-height: auto; /* IMPORTANT: removes the 100vh on mobile */
-    height: 60px; /* Give it a fixed small height for the links */
     padding: 0 10px;
     white-space: nowrap;
     z-index: 10; /* Keeps it on top */
@@ -151,10 +147,10 @@ img:hover {
     margin: 0;
   }
   .Sidebar-Nav ul li {
-    margin-top: 0; /* Remove that top margin from your desktop styles */
+    margin-top: 0; /* Remove top margin desktop styles */
     font-size: 14px; /* Slightly smaller for mobile screens */
   }
   .main-content {
-    width: 100%; /* Ensure the content fills the screen width now */
+    width: 100%; /* Ensure the content fills the screen width*/
   }
 }

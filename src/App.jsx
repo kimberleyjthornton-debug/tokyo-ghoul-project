@@ -1,84 +1,114 @@
-import react from "react";
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  NavLink,
+} from "react-router-dom";
+import KanekiPage from "./kaneki"; // Ensure the file is named kaneki.jsx and has the export
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
 function App() {
   return (
-    <>
+    <Router>
       <div className="Layout-Wrapper">
+        {/* --- SIDEBAR: Stays visible on every page --- */}
         <nav className="Sidebar-Nav">
           <ul>
             <li>
-              <a href="/kaneki" className="nav-link">
+              <NavLink to="/" className="nav-link">
+                Home
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/kaneki" className="nav-link">
                 Kaneki Ken
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a href="/kamishiro" className="nav-link">
-                Rize Kamishiro
-              </a>
+              <NavLink to="/kamishiro" className="nav-link">
+                Kamishiro Rize
+              </NavLink>
             </li>
             <li>
-              <a href="/nagachika" className="nav-link">
-                Hideyoshi Nagachika
-              </a>
+              <NavLink to="/hideyoshi" className="nav-link">
+                Nagachika Hideyoshi
+              </NavLink>
             </li>
             <li>
-              <a href="/arima" className="nav-link">
+              <NavLink to="/arima" className="nav-link">
                 Arima Kishou
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a href="/amon" className="nav-link">
-                Kotaro Amon
-              </a>
+              <NavLink to="/amon" className="nav-link">
+                Amon Kotaro
+              </NavLink>
             </li>
             <li>
-              <a href="/suzuya" className="nav-link">
+              <NavLink to="/suzuya" className="nav-link">
                 Suzuya Juuzou
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a href="/yoshimura" className="nav-link">
-                Eto Yoshimura
-              </a>
+              <NavLink to="/yoshimura" className="nav-link">
+                Yoshimura Eto
+              </NavLink>
             </li>
             <li>
-              <a href="/yoshimura" className="nav-link">
+              <NavLink to="/takizawa" className="nav-link">
                 Takizawa Seidou
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a href="/tsukiyama" className="nav-link">
+              <NavLink to="/tsukiyama" className="nav-link">
                 Tsukiyama Shuu
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a href="/kirishima" className="nav-link">
+              <NavLink to="/kirishima" className="nav-link">
                 Kirishima Touka
-              </a>
+              </NavLink>
             </li>
           </ul>
         </nav>
+
+        {/* --- MAIN CONTENT: This area "swaps" based on the URL --- */}
         <div className="main-content">
-          <header>
-            <h1>Tokyo Ghoul</h1>
-          </header>
-          <div className="image-slider-container">
-            <img src="/images/rize-kamishiro.webp" />
-            <img src="/images/hide.webp" />
-            <img src="/images/touka.webp" />
-            <img src="/images/tsukiyama.webp" />
-            <img src="/images/kaneki-ken.webp" href="/kaneki" />
-            <img src="/images/eto.webp" />
-            <img src="/images/juuzou-suzuya.webp" />
-            <img src="/images/amon.webp" />
-            <img src="/images/takizawa.webp" />
-            <img src="/images/arima.webp" />
-          </div>
+          <Routes>
+            {/* 1. THE HOME ROUTE */}
+            <Route
+              path="/"
+              element={
+                <>
+                  <header>
+                    <h1>Tokyo Ghoul</h1>
+                  </header>
+                  <div className="image-slider-container">
+                    <img src="/images/rize-kamishiro.webp" alt="Rize" />
+                    <img src="/images/hide.webp" alt="Hide" />
+                    <img src="/images/touka.webp" alt="Touka" />
+                    <img src="/images/tsukiyama.webp" alt="Tsukiyama" />
+                    <img src="/images/kaneki-ken.webp" alt="Kaneki" />
+                    <img src="/images/eto.webp" alt="Eto" />
+                    <img src="/images/juuzou-suzuya.webp" alt="Juuzou" />
+                    <img src="/images/amon.webp" alt="Amon" />
+                    <img src="/images/takizawa.webp" alt="Takizawa" />
+                    <img src="/images/arima.webp" alt="Arima" />
+                  </div>
+                </>
+              }
+            />
+
+            {/* 2. THE KANEKI ROUTE */}
+            <Route path="/kaneki" element={<KanekiPage />} />
+
+            {/* FUTURE ROUTES: You will add Rize, Hide, etc. here later */}
+          </Routes>
         </div>
       </div>
-    </>
+    </Router>
   );
 }
 

@@ -2,7 +2,7 @@ import React from "react";
 
 const KanekiPage = () => {
   return (
-    <div className="Layout-Wrapper">
+    <div>
       {/* You can import your sidebar here later! */}
 
       <main className="main-content">
@@ -19,8 +19,10 @@ const KanekiPage = () => {
           </p>
         </section>
 
-        <section className="tarot-lore">{/* Your Tarot cards info */}</section>
+        <section></section>
       </main>
     </div>
   );
 };
+
+export default KanekiPage;
