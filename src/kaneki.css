@@ -13,6 +13,10 @@
   padding-left: 8%;
 }
 
+.content {
+  text-align: left;
+}
+
 .kaneki-hero h1 {
   font-size: 5rem;
   margin: 0;

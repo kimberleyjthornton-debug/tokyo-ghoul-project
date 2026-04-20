@@ -19,7 +19,44 @@ const KanekiPage = () => {
             role, it would certainly be... a tragedy..."
           </p>
         </section>
-        {/* ... rest of your content ... */}
+        <section className="kaneki-analysis">
+          <div className="kaneki-grid-container mt-5">
+            <div className="row">
+              <div className="col">
+                <img
+                  src="/images/human-kaneki.webp"
+                  alt="Human Kaneki"
+                  title="Human Kaneki"
+                />
+              </div>
+              </div>
+              <div className="col">
+                <div>
+                  <h2 className="kaneki-grid-heading text-center">
+                    The Persona
+                  </h2>
+                  <p>
+                    <p className="kaneki-grid-analysis">
+                      The "college student" mask. Gentle, well-read, and
+                      desperate to remain in the human world.
+                    </p>
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <div>
+                    <h2 class="kaneki-grid-heading text-center">The Shadow</h2>
+                    <p className="kaneki-grid-analysis">
+                      Total loss of control. The repressed hunger and rage that
+                      manifests as the "Centipede."
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
     </div>
   );
