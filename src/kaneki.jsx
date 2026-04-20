@@ -63,7 +63,7 @@ const KanekiPage = () => {
                 />
               </div>
             </div>
-            <div className="row kaneki-grid-row mb-3">
+            <div className="row kaneki-grid-row mb-3 centipede-possessions">
               <div className="col">
                 <img
                   src="/images/centipede-kaneki.jpg"
@@ -75,14 +75,14 @@ const KanekiPage = () => {
               <div className="col">
                 <div>
                   <h2 className="kaneki-grid-heading text-center">
-                    The Centipede????
+                    The Shadow Possession
                   </h2>
                   <p className="kaneki-grid-analysis">
-                    We've already mentioned The Shadow, but I feel like the
-                    centipede is a separate entity. It represents the trauma and
-                    pain that Kaneki experiences, especially during his torture.
-                    It's a manifestation of his suffering and the darkness that
-                    consumes him... how can we title this in a jungian way???
+                    The Centipede represents an 'Autonomous Complex.' It is the
+                    trauma of Yamori's torture manifesting as a separate entity.
+                    Here, the Shadow is no longer a part of Kaneki—it has
+                    possessed him, turning his suffering into a destructive,
+                    animalistic force of pure survival.
                   </p>
                 </div>
               </div>
@@ -92,8 +92,10 @@ const KanekiPage = () => {
                 <div>
                   <h2 className="kaneki-grid-heading text-center">The Self</h2>
                   <p className="kaneki-grid-analysis">
-                    The emergence of the Shadow Self. The ghoul side of Kaneki
-                    that he tries to suppress, denying his hunger and urges.
+                    The final stage of Individuation. Kaneki stops fighting his
+                    nature and accepts both the 'Student' and the 'Ghoul.' By
+                    integrating his tragedy, he achieves wholeness, manifesting
+                    as the One-Eyed King who bridges two worlds.
                   </p>
                 </div>
               </div>
