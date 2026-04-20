@@ -21,91 +21,72 @@ const KanekiPage = () => {
         </section>
         <section className>
           <div className="kaneki-grid-container">
-            <div className="row kaneki-grid-row mb-3">
-              <div className="col">
-                <img
-                  src="/images/kaneki-human.webp"
-                  alt="Human Kaneki"
-                  className="img-fluid rounded"
-                  title="Human Kaneki"
-                />
+            <div className="kaneki-grid-row">
+              <div className="text-box">
+                <h2 className="kaneki-grid-heading">The Persona</h2>
+                <p className="kaneki-grid-analysis">
+                  The 'college student' is a functional complex used for social
+                  adaptation. For Kaneki, this is a desperate sanctuary of human
+                  morality and literature. However, by clinging to this mask, he
+                  creates a psychological tension that prevents him from
+                  integrating his new reality, eventually leading to a total
+                  fracture of the self.
+                </p>
               </div>
-              <div className="col">
-                <div>
-                  <h2 className="kaneki-grid-heading text-center">
-                    The Persona
-                  </h2>
-                  <p className="kaneki-grid-analysis">
-                    The "college student" mask. Gentle, well-read, and desperate
-                    to remain in the human world.
-                  </p>
-                </div>
+              <div className="image-box">
+                <img src="/images/kaneki-human.webp" alt="Human Kaneki" />
               </div>
             </div>
-            <div className="row kaneki-grid-row mb-3">
-              <div className="col">
-                <div>
-                  <h2 className="kaneki-grid-heading text-center">
-                    The Shadow
-                  </h2>
-                  <p className="kaneki-grid-analysis">
-                    The emergence of the Shadow Self. The ghoul side of Kaneki
-                    that he tries to suppress, denying his hunger and urges.
-                  </p>
-                </div>
+            <div className="kaneki-grid-row shadow-row">
+              <div className="text-box">
+                <h2 className="kaneki-grid-heading">The Shadow</h2>
+                <p className="kaneki-grid-analysis">
+                  he Shadow represents everything the ego refuses to
+                  acknowledge. By denying his 'Ghoul' side, Kaneki allows his
+                  repressed instincts and hunger to grow in the unconscious.
+                  This denial fuels the Shadow's power until it no longer asks
+                  for permission to emerge, resulting in the terrifying eruption
+                  of his predatory nature.
+                </p>
               </div>
-              <div className="col">
-                <img
-                  src="/images/kaneki-shadow.webp"
-                  alt="Ghoul Kaneki"
-                  className="img-fluid rounded"
-                  title="Ghoul Kaneki"
-                />
+              <div className="image-box">
+                <img src="/images/kaneki-shadow.webp" alt="Shadow Kaneki" />
               </div>
             </div>
-            <div className="row kaneki-grid-row mb-3 centipede-possessions">
-              <div className="col">
+            <div className="kaneki-grid-row centipede-possessions shadow-row">
+              <div className="text-box">
+                <h2 className="kaneki-grid-heading text-center">
+                  The Shadow Possession
+                </h2>
+                <p className="kaneki-grid-analysis">
+                  The Centipede represents an 'Autonomous Complex.' It is the
+                  trauma of Yamori's torture manifesting as a separate entity.
+                  Here, the Shadow is no longer a part of Kaneki—it has
+                  possessed him, turning his suffering into a destructive,
+                  animalistic force of pure survival.
+                </p>
+              </div>
+              <div className="image-box">
                 <img
                   src="/images/centipede-kaneki.jpg"
                   alt="Centipede Kaneki"
-                  className="img-fluid rounded"
-                  title="Centipede Kaneki"
                 />
-              </div>
-              <div className="col">
-                <div>
-                  <h2 className="kaneki-grid-heading text-center">
-                    The Shadow Possession
-                  </h2>
-                  <p className="kaneki-grid-analysis">
-                    The Centipede represents an 'Autonomous Complex.' It is the
-                    trauma of Yamori's torture manifesting as a separate entity.
-                    Here, the Shadow is no longer a part of Kaneki—it has
-                    possessed him, turning his suffering into a destructive,
-                    animalistic force of pure survival.
-                  </p>
-                </div>
               </div>
             </div>
-            <div className="row kaneki-grid-row mb-3">
-              <div className="col">
-                <div>
-                  <h2 className="kaneki-grid-heading text-center">The Self</h2>
-                  <p className="kaneki-grid-analysis">
-                    The final stage of Individuation. Kaneki stops fighting his
-                    nature and accepts both the 'Student' and the 'Ghoul.' By
-                    integrating his tragedy, he achieves wholeness, manifesting
-                    as the One-Eyed King who bridges two worlds.
-                  </p>
-                </div>
+            <div className="kaneki-grid-row self-row">
+              <div className="text-box">
+                <h2 className="kaneki-grid-heading">The Self</h2>
+                <p className="kaneki-grid-analysis">
+                  The 'college student' is a functional complex used for social
+                  adaptation. For Kaneki, this is a desperate sanctuary of human
+                  morality and literature. However, by clinging to this mask, he
+                  creates a psychological tension that prevents him from
+                  integrating his new reality, eventually leading to a total
+                  fracture of the self.
+                </p>
               </div>
-              <div className="col">
-                <img
-                  src="/images/one-eyed-king.webp"
-                  alt="The One Eyed King"
-                  className="img-fluid rounded"
-                  title="The One Eyed King"
-                />
+              <div className="image-box">
+                <img src="/images/one-eyed-king.webp" alt="The One-Eyed King" />
               </div>
             </div>
           </div>
