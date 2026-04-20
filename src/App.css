@@ -141,7 +141,7 @@ p {
   cursor: pointer;
 }
 
-img {
+.image-slider-container img {
   width: 0px; /* Start small */
   flex-grow: 1; /* Each image takes an equal share of the space */
   height: 85%; /* Use the full height of your container */
@@ -172,12 +172,12 @@ img {
     overflow-x: auto; /* Allows users to swipe if it gets too wide */
     margin-top: 2px;
   }
-  img {
+  .image-slider-container img {
     min-width: 40px; /* Prevents them from becoming invisible lines */
     transition: flex 0.4s ease;
   }
-  img:active,
-  img:hover {
+  .image-slider-container img:active,
+  .image-slider-container img:hover {
     flex: 30; /* A massive expansion when tapped/held */
   }
   .Layout-Wrapper {
