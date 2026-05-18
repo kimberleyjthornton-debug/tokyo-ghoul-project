@@ -6,6 +6,7 @@ import {
   NavLink,
 } from "react-router-dom";
 import KanekiPage from "./kaneki"; // Ensure the file is named kaneki.jsx and has the export
+import TakizawaPage from "./takizawa";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
@@ -135,11 +136,8 @@ function App() {
                 </>
               }
             />
-
-            {/* 2. THE KANEKI ROUTE */}
             <Route path="/kaneki" element={<KanekiPage />} />
-
-            {/* FUTURE ROUTES: You will add Rize, Hide, etc. here later */}
+            <Route path="/takizawa" element={<TakizawaPage />} />{" "}
           </Routes>
         </div>
       </div>

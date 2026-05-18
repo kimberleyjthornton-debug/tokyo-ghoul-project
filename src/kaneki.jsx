@@ -33,7 +33,7 @@ const KanekiPage = () => {
                   fracture of the self.
                 </p>
               </div>
-              <div className="image-box">
+              <div className="image-box ">
                 <img src="/images/kaneki-human.webp" alt="Human Kaneki" />
               </div>
             </div>
@@ -41,7 +41,7 @@ const KanekiPage = () => {
               <div className="text-box">
                 <h2 className="kaneki-grid-heading">The Shadow</h2>
                 <p className="kaneki-grid-analysis">
-                  he Shadow represents everything the ego refuses to
+                  The Shadow represents everything the ego refuses to
                   acknowledge. By denying his 'Ghoul' side, Kaneki allows his
                   repressed instincts and hunger to grow in the unconscious.
                   This denial fuels the Shadow's power until it no longer asks

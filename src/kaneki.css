@@ -1,4 +1,10 @@
 /* Ensure the background stretches full width and height of the header */
+.kaneki-container {
+  background-color: #0b0b0b;
+  color: #e0e0e0;
+  min-height: 100vh;
+}
+
 .kaneki-hero {
   width: 100% auto;
   height: 40vh;
@@ -11,6 +17,9 @@
   align-items: center; /* Centers text vertically */
   justify-content: flex-start; /* Shifts the wrapper to the left */
   padding-left: 4%;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
 }
 
 .kaneki-hero h1 {
@@ -31,38 +40,35 @@
 }
 
 .kaneki-content {
-  padding: 20px 0;
-  max-width: 95%;
+  max-width: 1200px; /* 🚀 Matches the exact wrapper limits of Takizawa */
+  margin: 0 auto; /* Centers the reading container on large screens */
+  padding: 40px 20px;
   color: #a9a9a9a2;
-  margin: 0 auto; /* Centers the reading content */
 }
 
 .tragedy-quote p {
   font-style: italic;
   text-align: center;
   color: #a9a9a9a2;
-  margin-bottom: 30px;
   font-size: 1.6rem;
   line-height: 1.6;
 }
 
 .kaneki-grid-container {
-  border-top: 2px solid #a9a9a914;
-  padding: 40px 1%;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
 .kaneki-grid-row {
   display: grid;
-  /* Two equal columns by default */
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  gap: 30px;
+  gap: 40px; /* 🚀 Matches the slightly broader gap of Takizawa */
   background: rgba(20, 20, 20, 0.8);
   border: 1px solid #333;
   padding: 30px;
-  margin-bottom: 10px;
-  border-radius: 12px;
   transition:
     transform 0.3s ease,
     border-color 0.3s ease;
@@ -77,7 +83,7 @@
   width: 100%;
   height: 400px; /* Locked height keeps the dossier look consistent */
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 4px;
 }
 
 .kaneki-grid-row:hover {
@@ -87,11 +93,12 @@
 
 .kaneki-grid-heading {
   font-family: "Bangers", cursive;
-  font-size: 3rem;
-  text-align: center;
+  font-size: 2rem;
+  margin-top: 0;
   letter-spacing: 2px;
-  color: #fff;
-  margin-top: 15px;
+  width: 100%; /* 🚀 Force block to span full text-box width */
+  text-align: center; /* 🚀 Clean centering over the paragraph text */
+  margin-bottom: 15px;
 }
 
 .kaneki-grid-analysis {
