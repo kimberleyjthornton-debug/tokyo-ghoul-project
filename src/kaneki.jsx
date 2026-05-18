@@ -23,7 +23,7 @@ const KanekiPage = () => {
           <div className="kaneki-grid-container">
             <div className="kaneki-grid-row">
               <div className="text-box">
-                <h2 className="kaneki-grid-heading">The Persona</h2>
+                <h2 className="kaneki-grid-heading persona">The Persona</h2>
                 <p className="kaneki-grid-analysis">
                   The 'college student' is a functional complex used for social
                   adaptation. For Kaneki, this is a desperate sanctuary of human

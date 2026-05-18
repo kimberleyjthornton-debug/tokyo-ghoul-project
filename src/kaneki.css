@@ -6,7 +6,7 @@
 }
 
 .kaneki-hero {
-  width: 100% auto;
+  width: 100%; /* Changed from '100% auto' (which is invalid CSS syntax) */
   height: 40vh;
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
@@ -14,16 +14,15 @@
   background-size: cover;
   background-position: center;
   display: flex;
-  align-items: center; /* Centers text vertically */
-  justify-content: flex-start; /* Shifts the wrapper to the left */
-  padding-left: 4%;
-  display: flex;
   flex-direction: column;
+  justify-content: center; /* Centers the content vertically */
+  align-items: flex-start; /* Forces the text wrapper to hug the left side */
+  padding-left: 4%;
   gap: 60px;
 }
 
 .kaneki-hero h1 {
-  font-size: 7rem;
+  font-size: 10rem;
   margin: 0;
   color: #a9a9a9a2;
   letter-spacing: 5px;
@@ -49,7 +48,7 @@
 .tragedy-quote p {
   font-style: italic;
   text-align: center;
-  color: #a9a9a9a2;
+  color: #e0e0e0;
   font-size: 1.6rem;
   line-height: 1.6;
 }
@@ -76,6 +75,7 @@
 
 .kaneki-grid-row p {
   font-size: 1.4rem;
+  color: #e0e0e0;
   line-height: 1.8;
 }
 
@@ -108,6 +108,11 @@
   text-align: justify;
 }
 
+.persona,
+.self-row h2 {
+  color: #ffffff;
+}
+
 .shadow-row {
   transition: all 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
   overflow: hidden;
@@ -130,6 +135,10 @@
 .shadow-row:hover img {
   filter: grayscale(20%) brightness(1.1) contrast(1.1);
   transform: scale(1.03);
+}
+
+.centipede-possessions h2 {
+  color: #ff0000;
 }
 
 .centipede-possessions:hover {

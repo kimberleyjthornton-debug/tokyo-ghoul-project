@@ -42,7 +42,7 @@ h1:hover {
 
 p {
   font-family: "Shadows Into Light", cursive;
-  color: #a9a9a9a2;
+  color: #f0f0f0b7;
   font-size: 22px;
   font-weight: 400;
   font-style: normal;
@@ -79,7 +79,7 @@ p {
   white-space: nowrap; /* Keeps names on one line */
   overflow: hidden; /* Hides the overlap */
   margin-top: 2px;
-  color: #a9a9a9a2;
+  color: #f0f0f0b7;
   font-size: 18px;
   font-weight: lighter;
   font-family: "Bangers", cursive;
@@ -88,7 +88,7 @@ p {
 
 .nav-link {
   text-decoration: none;
-  color: #a9a9a9a2;
+  color: #f0f0f0a2;
   transition: color 0.3s;
   padding-top: 5px;
 }
