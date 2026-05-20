@@ -9,6 +9,8 @@ import KanekiPage from "./kaneki"; // Ensure the file is named kaneki.jsx and ha
 import TakizawaPage from "./takizawa";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
+import KamishiroPage from "./kamishiro";
+import HideyoshiPage from "./hideyoshi";
 
 function App() {
   return (
@@ -138,6 +140,9 @@ function App() {
             />
             <Route path="/kaneki" element={<KanekiPage />} />
             <Route path="/takizawa" element={<TakizawaPage />} />{" "}
+            <Route path="/kamishiro" element={<KamishiroPage />} />{" "}
+            <Route path="/hideyoshi" element={<HideyoshiPage />} />{" "}
+            <Route path="/kirishima" element={<KirishimaPage />} />{" "}
           </Routes>
         </div>
       </div>
