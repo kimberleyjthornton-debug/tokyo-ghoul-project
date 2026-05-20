@@ -96,8 +96,9 @@
   font-size: 2rem;
   margin-top: 0;
   letter-spacing: 2px;
-  width: 100%; /* 🚀 Force block to span full text-box width */
-  text-align: center; /* 🚀 Clean centering over the paragraph text */
+  display: block;
+  width: 100% !important;
+  text-align: center !important;
   margin-bottom: 15px;
 }
 
@@ -108,8 +109,7 @@
   text-align: justify;
 }
 
-.persona,
-.self-row h2 {
+.self-row .kaneki-grid-heading {
   color: #ffffff;
 }
 
@@ -225,14 +225,13 @@
     grid-template-columns: 1fr; /* Stack into one column */
     text-align: center;
   }
-
   /* This ensures the image ALWAYS stays on top when stacked, 
      even for the rows where we swapped the order! */
   .kaneki-grid-row {
     display: flex;
     flex-direction: column;
+    gap: 20px; /* 🚀 Prevents stacked text boxes from hugging the image edges on phones */
   }
-
   /* Make sure the text doesn't feel 'squashed' on mobile */
   .kaneki-grid-analysis {
     padding: 10px 0;

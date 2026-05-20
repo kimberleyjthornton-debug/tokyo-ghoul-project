@@ -11,6 +11,12 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import KamishiroPage from "./kamishiro";
 import HideyoshiPage from "./hideyoshi";
+import KirishimaPage from "./kirishima";
+import ArimaPage from "./arima";
+import AmonPage from "./amon";
+import SuzuyaPage from "./suzuya";
+import YoshimuraPage from "./yoshimura";
+import TsukiyamaPage from "./tsukiyama";
 
 function App() {
   return (
@@ -142,7 +148,12 @@ function App() {
             <Route path="/takizawa" element={<TakizawaPage />} />{" "}
             <Route path="/kamishiro" element={<KamishiroPage />} />{" "}
             <Route path="/hideyoshi" element={<HideyoshiPage />} />{" "}
-            <Route path="/kirishima" element={<KirishimaPage />} />{" "}
+            <Route path="/kirishima" element={<KirishimaPage />} />
+            <Route path="/arima" element={<ArimaPage />} />
+            <Route path="/amon" element={<AmonPage />} />
+            <Route path="/suzuya" element={<SuzuyaPage />} />
+            <Route path="/yoshimura" element={<YoshimuraPage />} />
+            <Route path="/tsukiyama" element={<TsukiyamaPage />} />
           </Routes>
         </div>
       </div>

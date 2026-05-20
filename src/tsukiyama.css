@@ -1,13 +1,13 @@
-.kamishiro-container {
+.tsukiyama-container {
   background-color: #0b0b0b;
   color: #e0e0e0;
   min-height: 100vh;
 }
 
-.kamishiro-hero {
+.tsukiyama-hero {
   background:
     linear-gradient(rgba(0, 0, 0, 0.7), #0b0b0b),
-    url("/images/kamishiro-bg.jpg") center/cover;
+    url("/images/tsukiyama-bg.jpg") center/cover;
   background-size: cover;
   height: 40vh;
   width: 100% auto;
@@ -36,7 +36,7 @@
   margin-top: 10px;
 }
 
-.kamishiro-content {
+.tsukiyama-content {
   max-width: 1200px;
   margin: 0 auto;
   padding: 40px 20px;
@@ -54,13 +54,13 @@
 }
 
 /* Reusing the reliable grid system structure */
-.kamishiro-grid-container {
+.tsukiyama-grid-container {
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
 
-.kamishiro-grid-row {
+.tsukiyama-grid-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
@@ -72,15 +72,15 @@
 }
 
 /* Alternating rows just like Kaneki's to keep visual interest */
-.kamishiro-grid-row:nth-child(even) {
+.tsukiyama-grid-row:nth-child(even) {
   direction: rtl;
 }
 
-.kamishiro-grid-row:nth-child(even) .text-box {
+.tsukiyama-grid-row:nth-child(even) .text-box {
   direction: ltr; /* Keeps text reading normally even when container is flipped */
 }
 
-.kamishiro-grid-heading {
+.tsukiyama-grid-heading {
   font-family: "Bangers", cursive;
   font-size: 2rem;
   margin-top: 0;
@@ -108,7 +108,7 @@
   width: fit-content;
 }
 
-.kamishiro-grid-analysis {
+.tsukiyama-grid-analysis {
   line-height: 1.8;
   color: #b5b5b5;
 }
@@ -127,8 +127,8 @@
 }
 
 @media (max-width: 768px) {
-  .kamishiro-grid-row,
-  .kamishiro-grid-row:nth-child(even) {
+  .tsukiyama-grid-row,
+  .tsukiyama-grid-row:nth-child(even) {
     grid-template-columns: 1fr;
     direction: ltr;
   }

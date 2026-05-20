@@ -10,6 +10,7 @@ const KanekiPage = () => {
           <p className="alias">"The One-Eyed King"</p>
         </div>
       </header>
+
       <main className="kaneki-content">
         <section className="tragedy-quote">
           <p>
@@ -19,11 +20,12 @@ const KanekiPage = () => {
             role, it would certainly be... a tragedy..."
           </p>
         </section>
-        <section className>
+
+        <section>
           <div className="kaneki-grid-container">
-            <div className="kaneki-grid-row">
+            <div className="kaneki-grid-row ego-row">
               <div className="text-box">
-                <h2 className="kaneki-grid-heading persona">The Persona</h2>
+                <h2 className="kaneki-grid-heading">The Persona</h2>
                 <p className="kaneki-grid-analysis">
                   The 'college student' is a functional complex used for social
                   adaptation. For Kaneki, this is a desperate sanctuary of human
@@ -33,11 +35,15 @@ const KanekiPage = () => {
                   fracture of the self.
                 </p>
               </div>
-              <div className="image-box ">
+              <div className="image-box">
                 <img src="/images/kaneki-human.webp" alt="Human Kaneki" />
               </div>
             </div>
+
             <div className="kaneki-grid-row shadow-row">
+              <div className="image-box">
+                <img src="/images/kaneki-shadow.webp" alt="Shadow Kaneki" />
+              </div>
               <div className="text-box">
                 <h2 className="kaneki-grid-heading">The Shadow</h2>
                 <p className="kaneki-grid-analysis">
@@ -49,10 +55,8 @@ const KanekiPage = () => {
                   of his predatory nature.
                 </p>
               </div>
-              <div className="image-box">
-                <img src="/images/kaneki-shadow.webp" alt="Shadow Kaneki" />
-              </div>
             </div>
+
             <div className="kaneki-grid-row centipede-possessions shadow-row">
               <div className="text-box">
                 <h2 className="kaneki-grid-heading text-center">
@@ -73,7 +77,11 @@ const KanekiPage = () => {
                 />
               </div>
             </div>
+
             <div className="kaneki-grid-row self-row">
+              <div className="image-box">
+                <img src="/images/one-eyed-king.webp" alt="The One-Eyed King" />
+              </div>
               <div className="text-box">
                 <h2 className="kaneki-grid-heading">The Self</h2>
                 <p className="kaneki-grid-analysis">
@@ -84,9 +92,6 @@ const KanekiPage = () => {
                   integrating his new reality, eventually leading to a total
                   fracture of the self.
                 </p>
-              </div>
-              <div className="image-box">
-                <img src="/images/one-eyed-king.webp" alt="The One-Eyed King" />
               </div>
             </div>
           </div>
