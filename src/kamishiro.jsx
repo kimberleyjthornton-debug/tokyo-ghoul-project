@@ -40,7 +40,10 @@ const KamishiroPage = () => {
                 </p>
               </div>
               <div className="image-box">
-                <img src=" " alt=" " />
+                <img
+                  src="/images/kamishiro-literary.webp"
+                  alt="Kamishiro's Literary Mask"
+                />
               </div>
             </div>
 
@@ -63,7 +66,10 @@ const KamishiroPage = () => {
                 </p>
               </div>
               <div className="image-box">
-                <img src=" " alt=" " />
+                <img
+                  src="/images/kamishiro-gluttonous.webp"
+                  alt="Kamishiro's Gluttonous Shadow"
+                />
               </div>
             </div>
 
@@ -84,7 +90,10 @@ const KamishiroPage = () => {
                 </p>
               </div>
               <div className="image-box">
-                <img src=" " alt=" " />
+                <img
+                  src="/images/kamishiro-autonomous-anima.webp"
+                  alt="Kamishiro's Autonomous Anima"
+                />
               </div>
             </div>
 
@@ -104,7 +113,10 @@ const KamishiroPage = () => {
                 </p>
               </div>
               <div className="image-box">
-                <img src=" " alt=" " />
+                <img
+                  src="/images/kamishiro-fractured-origin.webp"
+                  alt="Kamishiro's Fractured Origin"
+                />
               </div>
             </div>
           </div>
